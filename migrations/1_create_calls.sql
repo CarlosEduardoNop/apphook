@@ -1,0 +1,9 @@
+CREATE TABLE `calls` (
+    `id` BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    `url` VARCHAR(255) NOT NULL,
+    `event` VARCHAR(255) NOT NULL,
+    `payload` JSON NOT NULL,
+    `response` JSON NULL,
+    `created_at` TIMESTAMP NULL DEFAULT NULL,
+    `updated_at` TIMESTAMP NULL DEFAULT NULL
+)

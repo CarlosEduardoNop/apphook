@@ -1,0 +1,3 @@
+ALTER TABLE calls
+ADD COLUMN attempts TINYINT NULL AFTER event,
+ADD COLUMN delay INT NOT NULL AFTER attempts;
